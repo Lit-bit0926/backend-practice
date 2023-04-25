@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Example</title>
+    <style>
+        h2{
+            color: red;
+        }
+
+        .FstP{
+            color: crimson;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .SndP{
+            font-size: 18px;
+        }
+
+        .container{
+            background-color: lightgray;
+        }
+
+        .TrdP{
+            font-size: 18px;
+            width: 100%;
+            font-style: italic;
+            white-space: nowrap;    /* 텍스트가 길어 부모 요소 안의 가로폭을 넘어가더라도 자동으로 줄바꿈이 일어나지 않게 해줌 */
+            overflow: hidden;   /* 텍스트가 가로폭을 초과할 경우 남은 텍스트들을 보여주지 않게함 */
+            text-overflow: ellipsis;    /* 말줄임 기호(... (ellipsis))를 보여줌 */
+        }
+
+        .Itxt{
+            background-color: lightblue;
+            border: solid 2px black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Selector Example</h1>
+    <h2>Lorem IpsumM</h2>
+    <p class="FstP">이 요소는 단락 요소 입니다. 글자의 색 이름은 'crimson'이고, font-style은 이탤릭입니다.</p>
+    <p class="SndP">이 요소는 단락 요소 입니다. 1</p>
+    <p class="SndP">이 요소는 단락 요소 입니다. 2</p>
+    <p class="SndP">이 요소는 단락 요소 입니다. 3</p>
+    <ul>
+        <li>unordered list 입니다. ul → li 구조를 가집니다. 1</li>
+        <li>unordered list 입니다. ul → li 구조를 가집니다. 2</li>
+        <li>unordered list 입니다. ul → li 구조를 가집니다. 3</li>
+    </ul>
+    <p class="SndP">이 요소는 단락 요소 입니다. 4</p>
+    <p class="SndP">이 요소는 단락 요소 입니다. 5</p>
+    <p class="SndP">이 요소는 단락 요소 입니다. 6</p>
+    <div class="container">Div container</div>
+    <p class="TrdP">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해 가나다라마바사아자차카타파하///가나다라마바사아자차카타파하///가나다라마바사아자차카타파하///가나다라마바사아자차카타파하</p>
+    <p class="TrdP">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해 ...</p>
+    <p class="TrdP">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해 ...</p>
+    <input type="text" class="Itxt" placeholder="Enter text here..."> <a href="*">Link example</a>
+</body>
+</html>
